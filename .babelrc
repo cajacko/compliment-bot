@@ -9,7 +9,8 @@
       "root": ["./src"],
       "alias": {
         "models": "./src/server/models",
-        "server": "./src/server"
+        "server": "./src/server",
+        "constants": "./src/constants"
       },
       "extensions": [".js", ".jsx"]
       }
