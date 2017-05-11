@@ -8,7 +8,9 @@
     "lint": "eslint **/*.{js,jsx}",
     "eslint": "eslint",
     "start:production": "node dist/server/index.js",
-    "build:production": "babel-node scripts/build.js --env.production"
+    "build:production": "babel-node scripts/build.js --env.production",
+    "cron": "babel-node src/server/cron.js",
+    "cron:production": "node dist/server/cron.js"
   },
   "author": {
     "name": "Charlie Jackson",
@@ -52,6 +54,7 @@
     "xml2js": "^0.4.17"
   },
   "dependencies": {
+    "babel-cli": "6.24.1",
     "dotenv": "4.0.0",
     "ejs": "2.5.6",
     "express": "4.15.2",
